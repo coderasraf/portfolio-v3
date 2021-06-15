@@ -1,0 +1,21 @@
+/*  .......... Intro section css ...........  */
+@use '../custom' as *;
+@use './mixins' as *;
+
+.display-2{
+	margin-bottom: 1rem;
+	&--intro{
+		display: inline-block;
+		font-weight: 700;
+		text-transform: capitalize;
+		@include poppins;
+	}
+	&--description{
+		font-size: 1.4rem;
+		display: block;
+		text-transform: none;
+		@include poppins;
+		margin-top: 1.2rem;
+		margin-bottom: 1.2rem;
+	}
+}
